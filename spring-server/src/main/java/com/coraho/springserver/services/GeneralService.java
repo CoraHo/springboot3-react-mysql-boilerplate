@@ -18,4 +18,8 @@ public class GeneralService {
     public List<GeneralObj> getAllObj() {
         return generalRepo.findAll();
     }
+
+    public GeneralObj createObj(GeneralObj obj) {
+        return generalRepo.save(obj);
+    }
 }
